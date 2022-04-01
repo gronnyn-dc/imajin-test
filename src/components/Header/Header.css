@@ -1,0 +1,17 @@
+.imajin__headerContainer {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	height: 90px;
+	background-color: #7c448b;
+}
+.imajin__headerContainer:hover {
+	cursor: pointer;
+}
+.imajin__headerImage {
+	height: 90px;
+	margin-left: 30px;
+}
+@media screen and (max-width: 400px) {
+	.imajin__headerImage {
+		margin-left: 0;
+	}
+}

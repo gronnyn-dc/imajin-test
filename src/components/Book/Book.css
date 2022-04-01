@@ -1,0 +1,62 @@
+.imajin__contactsContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 30px;
+	padding: 20px 0 20px 20px;
+}
+.imajin__contactsContainer:hover {
+	cursor: pointer;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.imajin__pictureImage {
+	height: 120px;
+	width: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.imajin__details {
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+}
+.imajin__text {
+	font-size: 20px;
+}
+.imajin__cardContainer {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 60px;
+	padding: 0 20px 0 20px;
+}
+.imajin__cardTitle {
+	font-size: 20px;
+	font-weight: 500;
+	width: 46%;
+}
+.imajin__cardPrice {
+	font-size: 20px;
+	font-weight: 500;
+}
+.imajin__cardEdit {
+	font-size: 20px;
+	font-weight: 500;
+	margin-left: auto;
+}
+.imajin__cardEdit:hover {
+	color: #7c448b;
+	cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+	.imajin__cardTitle {
+		font-size: 16px;
+		width: 35%;
+	}
+	.imajin__cardPrice {
+		font-size: 16px;
+	}
+	.imajin__cardEdit {
+		font-size: 16px;
+	}
+}

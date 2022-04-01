@@ -1,0 +1,38 @@
+.imajin__modalContainer {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 6;
+	padding: 15px;
+	border-radius: 6px;
+	background-color: #fff;
+	width: 768px;
+}
+.imajin__addCardTitleTextArea {
+	height: 30px;
+	font-size: 16px;
+}
+.imajin__titleTextContainer {
+	display: flex;
+	flex-direction: column;
+}
+.imajin__priceTextContainer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+.imajin__submitButton {
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 400px) {
+	.imajin__modalContainer {
+		width: 300px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.imajin__modalContainer {
+		width: 90%;
+	}
+}
