@@ -52,11 +52,19 @@ export default function Books() {
 	};
 
 	const handleClickSave = () => {
-		books[chosenIndex].judul = editedBook.judul;
-		books[chosenIndex].harga = editedBook.harga;
-		setModalActive(false);
-		handleClickOverlay();
-		setEditedBook({});
+		if (editedBook.judul.length < 1) {
+			alert('You have to fill the title');
+		} else if (editedBook.harga.length < 1) {
+			alert('You have to fill the price');
+		} else if (editedBook.judul.length < 1 && editedBook.harga.length < 1) {
+			alert('You have to fill the title and price');
+		} else {
+			books[chosenIndex].judul = editedBook.judul;
+			books[chosenIndex].harga = editedBook.harga;
+			setModalActive(false);
+			handleClickOverlay();
+			setEditedBook({});
+		}
 	};
 
 	return (
@@ -90,7 +98,7 @@ export default function Books() {
 				? books.map((book, index) => {
 						return (
 							<div key={index}>
-								<Card index={index} book={book} handleClickEditButton={(book, index) => handleClickEditButton(book, index)} image_url={imageURL} />
+								<Card index={index} book={book} handleClickEditButton={(book, index) => handleClickEditButton(book, index)} />
 							</div>
 						);
 				  })
