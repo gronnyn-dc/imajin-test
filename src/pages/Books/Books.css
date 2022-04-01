@@ -7,11 +7,11 @@
 .imajin__titleContainer {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 .imajin__counterContainer {
 	display: flex;
 	flex-direction: column;
-	margin-left: auto;
 	margin-top: 20px;
 }
 .imajin__counterText {
@@ -38,7 +38,22 @@
 .imajin__pagination .span {
 	width: 30px;
 }
-
+.imajin__imageContainer {
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+}
+.imajin__pictureImage {
+	height: 120px;
+	width: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.imajin__authorName {
+	font-size: 20px;
+	font-weight: 500;
+	margin-left: 20px;
+}
 @media screen and (max-width: 400px) {
 	.imajin__titleContainer {
 		padding: 0 10px;
